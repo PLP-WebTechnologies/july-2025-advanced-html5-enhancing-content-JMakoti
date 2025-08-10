@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 2 Assigment - Enhanced Form Html</title>
+  </head>
+  <body>
+    <header>
+        <h1>Week 2 Assigment - Enhanced Form Html</h1>
+    </header>
+    <main>
+      <!-- Lists Section-->
+      <section>
+        <!-- Ordered List -->
+        <h2>Fruits Ordered List</h2>
+        <ol>
+          <li>Mango</li>
+          <li>Passion</li>
+          <li>Avacado</li>
+        </ol>
+
+        <!-- UnOredered List -->
+        <h2>Vegetable Unordered List</h2>
+        <ul>
+          <li>Sukumawiki</li>
+          <li>Cabbages</li>
+          <li>Okra</li>
+        </ul>
+
+        <!-- Nested List -->
+        <h2>Food Groups</h2>
+        <ol>
+          <li>Vitamins</li>
+          <ul>
+            <li>Fruits</li>
+            <li>Vegetables</li>
+          </ul>
+          <li>Proteins</li>
+          <ul>
+            <li>Meat</li>
+            <li>Eggs</li>
+          </ul>
+        </ol>
+
+        <!-- Defination List -->
+        <h2>Defination List</h2>
+        <dl>
+          <dt>HTML</dt>
+          <dd>HyperText MarkUp Language</dd>
+          <dt>CSS</dt>
+          <dd>Cascading Style Sheet</dd>
+        </dl>
+      </section>
+      <!-- Table Section -->
+      <section>
+        <h2>Weekly Routine Table</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Time</th>
+              <th>Activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>Morning</td>
+              <td>Sleeping</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>Afternoon</td>
+              <td>Reading</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>Evening</td>
+              <td>A Walk</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Media Section-->
+      <section>
+        <!-- images -->
+        <h1>Multimedia</h1>
+        <h2>Image</h2>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/65_film_teaser_poster.jpg/220px-65_film_teaser_poster.jpg"
+          alt="Turtle"
+          width="300"
+          height="200"
+        />
+         
+        <!-- video -->
+        <h2>Video</h2>
+        <video width="400" height="300" controls>
+          <source src="https://videos.pexels.com/video-files/32992748/14060888_2560_1440_30fps.mp4" type="video/mp4" />
+          Your Browzer does not support the videos
+        </video>
+
+         <!-- https://www.youtube.com/embed/M6YfhX83Cj8?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0 -->
+
+        <!-- audio -->
+        <h2>Audio</h2>
+        <audio controls>
+          <source src="" type="audio/mp3" />
+          Audio not supported
+        </audio>
+      </section>
+
+      <!-- Html5 Forms Section -->
+      <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Personal Info</legend>
+
+            <label for="full_names">Full Names:</label>
+            <input
+              type="text"
+              name="full_names"
+              id="full_names"
+              placeholder="joseph mwamuye"
+              required
+              minlength="3"
+            />
+            <br /><br />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@mail.com"
+              required
+            />
+            <br /><br />
+
+            <label for="id_number">ID Number:</label>
+            <input
+              type="number"
+              name="id_number"
+              id="id_number"
+              placeholder="12345678"
+              required
+              min="10000000"
+              max="99999999"
+            />
+            <br /><br />
+
+            <label for="phone">Phone Number:</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="+254700000000"
+              pattern="^\+?\d{10,15}$"
+              required
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Other Info</legend>
+
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Your username"
+              required
+              minlength="5"
+            />
+            <br /><br />
+
+            <label for="profile">Profile:</label>
+            <input type="file" name="profile" id="profile" accept="image/*" />
+            <br /><br />
+
+            <label for="dob">DOB:</label>
+            <input type="date" name="dob" id="dob" required />
+            <br /><br />
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="male" value="Male" required />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="Female" />
+            <label for="female">Female</label>
+            <br /><br />
+
+            <label for="bio">Bio:</label>
+            <textarea
+              name="bio"
+              id="bio"
+              rows="4"
+              placeholder="Enter your bio here..."
+              maxlength="200"
+            ></textarea>
+            <br /><br />
+
+            <label>
+              <input type="checkbox" name="subscribe" value="yes" />
+              Subscribe to Newsletter
+            </label>
+          </fieldset>
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>PLP@JULY2025</footer>
+  </body>
+</html>
